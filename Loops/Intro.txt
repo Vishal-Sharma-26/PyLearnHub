@@ -1,0 +1,22 @@
+A loop is a programming construct that repeats a block of code multiple times until a specific condition is met. It helps reduce repetition and automate tasks.
+There are two types of loops:
+
+Loop Type	         Used When	                               Example
+
+for	                 You know how many times to loop	       Loop over list, range, string
+while	             You loop until a condition is false	   Loop until user input is valid
+
+For Loop - A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+           With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+While Loop - With the while loop we can execute a set of statements as long as a condition is true.
+
+
+
+Loop Control Statements:
+
+Statement	                Description
+
+break	                    Stops the loop immediately
+continue	                Skips current iteration, goes to next
+pass	                    Does nothing (placeholder)

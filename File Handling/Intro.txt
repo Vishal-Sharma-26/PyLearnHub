@@ -1,0 +1,76 @@
+File handling is an essential part of programming that allows you to read from and write to files stored on disk.
+
+The key function for working with files in Python is the open() function.
+The open() function takes two parameters; filename, and mode.
+There are four different methods (modes) for opening a file:
+
+1. "r" - Read - Default value. Opens a file for reading, error if the file does not exist
+
+file = open("example.txt", "r")
+Using the with statement
+
+You can also use the with statement when opening a file:
+
+with open("example.txt", "r") as file:
+    content = file.read()
+
+
+
+
+2. "a" - Append - Opens a file for appending, creates the file if it does not exist
+
+file = open("example.txt", "a")
+file.write("This will be added at the end.\n")
+file.close()
+
+
+
+
+3. "w" - Write - Opens a file for writing, creates the file if it does not exist
+
+file = open("example.txt", "w")
+file.write("Hello, world!")
+file.writelines(["Line 1\n", "Line 2\n"])
+file.close()
+
+
+
+
+4. "x" - Create - Creates the specified file, returns an error if the file exists
+
+try:
+    with open("newfile.txt", "x") as file:
+        file.write("This file was created using 'x' mode.")
+except FileExistsError:
+    print("File already exists.")
+
+
+
+
+5. "t" - Text - Default value. Text mode
+
+with open("textfile.txt", "w+t") as file:
+    file.write("This is written in text mode.")
+    file.seek(0)  # Move back to the beginning of the file
+    print(file.read())
+
+
+
+
+6. "b" - Binary - Binary mode (e.g. images)
+
+with open("image.jpg", "rb") as file:
+    data = file.read()
+
+with open("copy.jpg", "wb") as file:
+    file.write(data)
+
+
+
+🔁 Comparison Example:
+
+Mode	                Purpose	                             DataType
+xt	                    Create file, write text	             Text
+xb	                    Create file, write binary	         Bytes
+rt	                    Read file as text (default)	         Text
+rb	                    Read file as binary	                 Bytes
