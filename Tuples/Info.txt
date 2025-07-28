@@ -1,0 +1,17 @@
+A tuple in Python is an immutable, ordered collection of elements, typically used to store heterogeneous data (items of different types). Tuples are similar to lists but cannot be modified after creation, making them useful for data that should remain constant.
+
+Key Characteristics of Tuples:
+1) Immutable: Once created, a tuple’s elements cannot be changed, added, or removed.
+2) Ordered: Elements have a defined order, accessible via indices (0-based).
+3) Heterogeneous: Can store elements of different types (e.g., integers, strings, objects).
+4) Allows Duplicates: Can contain duplicate elements.
+5) Defined with Parentheses: Created using () or the tuple() constructor.
+6) Immutable Data: Use tuples for data that shouldn’t change (e.g., coordinates, configuration settings).
+7) Memory Efficiency: Tuples use less memory than lists, so they’re slightly more efficient for fixed data.
+
+Key Points:
+A) Immutable: Cannot modify elements, but mutable objects inside tuples can be changed.
+B) Ordered: Maintains element order, accessible via indices.
+C) Lightweight: Tuples are faster and use less memory than lists.
+D) Versatile: Useful for packing/unpacking, returning multiple values, or as dictionary keys.
+E) Single-Element Tuple: Requires a trailing comma (e.g., (42,)), otherwise it’s treated as a regular value.
