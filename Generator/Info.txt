@@ -1,0 +1,7 @@
+A generator is a special type of iterator defined using a function or expression that uses the yield keyword.
+It allows you to iterate over a sequence of values without storing the entire sequence in memory.
+Generators are lazily evaluated, meaning values are generated only when requested.
+
+1) Generator Function: A function that contains at least one yield statement.
+2) Generator Object: The iterator object returned by calling a generator function.
+3) Generator Expression: A concise way to create a generator, similar to a list comprehension but using parentheses ().
